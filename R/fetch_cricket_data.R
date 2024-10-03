@@ -53,7 +53,7 @@ fetch_cricket_data <- function(matchtype = c("test", "odi", "t20"),
         ifelse(is.null(country), "", paste0(";team=", team)),
         ";page=",
         format(page, scientific = FALSE),
-        ";template=results;type=",
+        ";spanmin1=15+Mar+2001;spanval1=span;template=results;type=",
         activity,
         view_text,
         ";size=200;wrappertype=print"
